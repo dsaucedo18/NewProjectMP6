@@ -10,14 +10,21 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:padding="8dp"
         android:background="@drawable/appbackground">
 
-        <Button
-            android:id="@+id/LeagueButton"
+        <android.support.v4.widget.NestedScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Button(league)"
-            tools:text="Leagues" />
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_view_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:text="TextView" />
+
+        </android.support.v4.widget.NestedScrollView>
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
