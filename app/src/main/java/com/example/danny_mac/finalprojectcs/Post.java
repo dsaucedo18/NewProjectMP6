@@ -1,33 +1,34 @@
 package com.example.danny_mac.finalprojectcs;
 
 public class Post {
-    private String team;
+    private int id;
 
-    private String gameswon;
+    private String name;
 
-    private String gameslost;
+    private String dateOfBirth;
 
-    private String totalgames;
+    private String nationality;
 
-    private String points;
+    private String position;
 
-    public String getTeam() {
-        return team;
+
+    public int getId() {
+        return id;
     }
 
-    public String getGamesWon() {
-        return gameswon;
+    public String getName() {
+        return name;
     }
 
-    public String getGamesLost() {
-        return gameslost;
+    public String getDateOfBirth() {
+        return dateOfBirth;
     }
 
-    public String getTotalGames() {
-        return totalgames;
+    public String getNationality() {
+        return nationality;
     }
 
-    public String getPoints() {
-        return points;
+    public String getPosition() {
+        return position;
     }
 }

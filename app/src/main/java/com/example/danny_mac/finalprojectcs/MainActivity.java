@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         textViewResult = findViewById(R.id.text_view_result);
 
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://api.football-data.org/v2/")
+                .baseUrl("http://api.football-data.org/v2/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .build();
         JsonPlaceHolderApi jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
@@ -46,11 +46,11 @@ public class MainActivity extends AppCompatActivity {
 
                 for (Post post : posts) {
                     String content = "";
-                    content += "Team: " + post.getTeam() + "\n";
-                    content += "Games Won: " + post.getGamesWon() + "\n";
-                    content += "Games Lost: " + post.getGamesLost() + "\n";
-                    content += "Total Games: " + post.getTotalGames() + "\n";
-                    content += "Total Points: " + post.getPoints() + "\n\n";
+                    content += "Date of Birth: " + post.getDateOfBirth() + "\n";
+                    content += "Player ID: " + post.getId() + "\n";
+                    content += "PLayer Name: " + post.getName() + "\n";
+                    content += "Nationality: " + post.getNationality() + "\n";
+                    content += "Player Position: " + post.getPosition() + "\n\n";
 
                     textViewResult.append(content);
                 }
